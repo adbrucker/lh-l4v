@@ -8,7 +8,7 @@ chapter \<open>ARM\_HYP Machine Types\<close>
 
 theory MachineTypes
 imports
-  Word_Lib.WordSetup
+  Word_Lib_l4v.WordSetup
   Monads.Nondet_Empty_Fail
   Monads.Nondet_No_Fail
   Monads.Reader_Option_ND

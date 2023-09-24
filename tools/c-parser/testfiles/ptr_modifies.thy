@@ -5,7 +5,7 @@
  *)
 
 theory ptr_modifies
-imports "Word_Lib.WordSetup" "CParser.CTranslation"
+imports "Word_Lib_l4v.WordSetup" "CParser.CTranslation"
 begin
 
 external_file "ptr_modifies.c"

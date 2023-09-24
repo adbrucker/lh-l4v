@@ -64,7 +64,7 @@ lemma invs_valid_irq_states[elim!]:
   "invs s \<Longrightarrow> valid_irq_states s"
   by(auto simp: invs_def valid_state_def)
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma uint_ucast:
   "(x :: 'a :: len word) < 2 ^ LENGTH('b) \<Longrightarrow> uint (ucast x :: 'b :: len word) = uint x"
   by (metis Word.of_nat_unat mod_less of_nat_numeral semiring_1_class.of_nat_power unat_less_helper

@@ -174,7 +174,7 @@ lemma to_bool_if:
   "(if w \<noteq> 0 then 1 else 0) = (if to_bool w then 1 else 0)"
   by (auto simp: to_bool_def)
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma word_upcast_shiftr:
   assumes "LENGTH('a::len) \<le> LENGTH('b::len)"
   shows "UCAST('a \<rightarrow> 'b) (w >> n) = UCAST('a \<rightarrow> 'b) w >> n"
@@ -187,12 +187,12 @@ lemma word_upcast_neg_msb:
   unfolding ucast_def msb_word_of_int
   by clarsimp (metis Suc_pred bit_imp_le_length lens_gt_0(2) not_less_eq)
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma word_upcast_0_sle:
   "LENGTH('a::len) < LENGTH('b::len) \<Longrightarrow> 0 <=s UCAST('a \<rightarrow> 'b) w"
   by (simp add: word_sle_iff_le[OF word_msb_0 word_upcast_neg_msb])
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma scast_ucast_up_eq_ucast:
   assumes "LENGTH('a::len) < LENGTH('b::len)"
   shows "SCAST('b \<rightarrow> 'c) (UCAST('a \<rightarrow> 'b) w) = UCAST('a \<rightarrow> 'c::len) w"
@@ -361,7 +361,7 @@ lemma shiftr_and_eq_shiftl:
     thus ?thesis using word_eq_iff by blast
   qed
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma sign_extend_0[simp]:
   "sign_extend a 0 = 0"
   by (simp add: sign_extend_def)
@@ -382,7 +382,7 @@ lemma name_seq_bound_helper:
   apply (rule ccontr, simp add: linorder_not_le)
   done
 
-(* FIXME: what's being proven here? it's a pure word lemma - should it go in Word_Lib? *)
+(* FIXME: what's being proven here? it's a pure word lemma - should it go in Word_Lib_l4v? *)
 lemma reset_name_seq_bound_helper:
   fixes sz
   fixes v :: "('a :: len) word"
@@ -1318,7 +1318,7 @@ lemma word_ctz_0[simp]:
   "word_ctz (0::64 word) = 64"
   by (clarsimp simp: word_ctz_def to_bl_def)+
 
-(* FIXME move to Word_Lib *)
+(* FIXME move to Word_Lib_l4v *)
 lemma unat_trans_ucast_helper:
   "\<lbrakk> unat x < n ; n \<le> Suc 0 \<rbrakk> \<Longrightarrow> ucast x = 0"
   by (simp add: le_Suc_eq unsigned_eq_0_iff)

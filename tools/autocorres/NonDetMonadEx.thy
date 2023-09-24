@@ -10,7 +10,7 @@
 
 theory NonDetMonadEx
 imports
-  "Word_Lib.WordSetup"
+  "Word_Lib_l4v.WordSetup"
   "Monads.Nondet_VCG"
   "Monads.Nondet_Monad_Equations"
   "Monads.Nondet_More_VCG"

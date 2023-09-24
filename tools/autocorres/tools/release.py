@@ -200,7 +200,7 @@ with TempDir(cleanup=(not args.no_cleanup)) as base_dir:
         shutil.copyfile(f_src, f_dest)
 
     # Copy various other files.
-    for session in ['Basics', 'Eisbach_Tools', 'ML_Utils', 'Monads', 'Word_Lib']:
+    for session in ['Basics', 'Eisbach_Tools', 'ML_Utils', 'Monads', 'Word_Lib_l4v']:
         shutil.copyfile(
             os.path.join(args.repository, 'lib', session, 'ROOT'),
             os.path.join(target_dir, 'lib', session, 'ROOT'))

@@ -1134,7 +1134,7 @@ lemma abs_spec_modify_global[heap_abs]:
 
 (* Signed words are stored on the heap as unsigned words. *)
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma uint_scast:
   "uint (scast x :: 'a word) = uint (x :: 'a::len signed word)"
   by (metis len_signed scast_nop2 uint_word_of_int_eq word_uint.Rep_inverse)

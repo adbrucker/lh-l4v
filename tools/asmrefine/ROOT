@@ -8,7 +8,7 @@ chapter "Tools"
 
 session AsmRefine = CParser +
   sessions
-    Word_Lib
+    Word_Lib_l4v
     Lib
     CLib
   directories

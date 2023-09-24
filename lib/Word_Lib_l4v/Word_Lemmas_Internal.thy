@@ -48,12 +48,12 @@ lemma signed_ge_zero_scast_eq_ucast:
  "0 <=s x \<Longrightarrow> scast x = ucast x"
   by (simp add: scast_eq_ucast word_sle_msb_le)
 
-(* FIXME: move out of Word_Lib *)
+(* FIXME: move out of Word_Lib_l4v *)
 lemma disjCI2:
   "(\<not> P \<Longrightarrow> Q) \<Longrightarrow> P \<or> Q"
   by blast
 
-(* FIXME: move out of Word_Lib *)
+(* FIXME: move out of Word_Lib_l4v *)
 lemma nat_diff_diff_le_lhs:
   "a + c - b \<le> d \<Longrightarrow> a - (b - c) \<le> (d :: nat)"
   by arith
@@ -664,7 +664,7 @@ lemma FF_eq_minus_1:
 lemmas shiftl_t2n' = shiftl_eq_mult[where x="w::'a::len word" for w]
 
 
-(* candidates for moving to AFP Word_Lib: *)
+(* candidates for moving to AFP Word_Lib_l4v: *)
 
 lemma word_mask_shift_eqI:
   "\<lbrakk> x && mask n = y && mask n; x >> n = y >> n \<rbrakk> \<Longrightarrow> x = y"

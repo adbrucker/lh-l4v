@@ -9,7 +9,7 @@ This session contains basic library theories that are needed in other sessions
 of this repository, such as [Monads] or [CParser], but that we do not want to
 put into these sessions to avoid circular session dependencies.
 
-Dependencies on `Word_Lib` and the Isabelle distribution (e.g. `HOL-Libary`) are
+Dependencies on `Word_Lib_l4v` and the Isabelle distribution (e.g. `HOL-Libary`) are
 fine, but avoid introducing any further session dependencies.
 
 [Monads]: ../Monads/

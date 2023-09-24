@@ -9,6 +9,7 @@ chapter "Machine Operations"
 
 theory MachineOps
 imports
+  Word_Lib_l4v.WordSetup
   Word_Lib.WordSetup
   Monads.Nondet_Monad
   MachineMonad

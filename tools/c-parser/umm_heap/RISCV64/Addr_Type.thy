@@ -7,7 +7,7 @@
 (* License: BSD, terms see file ./LICENSE *)
 
 theory Addr_Type
-imports "Word_Lib.WordSetup"
+imports "Word_Lib_l4v.WordSetup"
 begin
 
 type_synonym addr_bitsize = "64"

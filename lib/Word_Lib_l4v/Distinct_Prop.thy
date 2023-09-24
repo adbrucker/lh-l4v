@@ -6,7 +6,7 @@
 
 section "Distinct Proposition"
 
-theory Distinct_Prop  (* part of non-AFP Word_Lib *)
+theory Distinct_Prop  (* part of non-AFP Word_Lib_l4v *)
 imports
   Many_More
   "HOL-Library.Prefix_Order"

@@ -246,7 +246,7 @@ theory_header = """(*
 chapter "Kernel Configuration"
 
 theory Kernel_Config
-imports Word_Lib.WordSetup
+imports Word_Lib_l4v.WordSetup
 begin
 
 (*

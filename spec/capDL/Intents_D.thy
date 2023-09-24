@@ -24,7 +24,7 @@
 
 theory Intents_D
 imports
-  "Word_Lib.WordSetup"
+  "Word_Lib_l4v.WordSetup"
   "ASpec.CapRights_A"
 begin
 

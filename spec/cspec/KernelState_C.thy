@@ -6,7 +6,7 @@
 
 theory KernelState_C
 imports
-  "Word_Lib.WordSetup"
+  "Word_Lib_l4v.WordSetup"
   "CLib.BitFieldProofsLib"
   "Substitute"
 begin

@@ -171,18 +171,18 @@ lemma unat_abstract_binops:
   by (auto simp: unat_plus_if' unat_div unat_mod UWORD_MAX_def le_to_less_plus_one
               WordAbstract.unat_mult_simple word_bits_def unat_sub word_le_nat_alt)
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma unat_of_int:
   "\<lbrakk>i \<ge> 0; i < 2 ^ LENGTH('a)\<rbrakk> \<Longrightarrow> unat (of_int i :: 'a::len word) = nat i"
   by (metis nat_less_numeral_power_cancel_iff of_nat_nat unat_of_nat_len)
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 (* FIXME generalises Word_Lemmas_32.unat_of_int_32 *)
 lemma unat_of_int_signed:
   "\<lbrakk>i \<ge> 0; i < 2 ^ LENGTH('a)\<rbrakk> \<Longrightarrow> unat (of_int i :: 'a::len signed word) = nat i"
   by (simp add: unat_of_int)
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma nat_sint:
   "0 <=s (x :: 'a::len signed word) \<Longrightarrow> nat (sint x) = unat x"
   apply (subst unat_of_int_signed[where 'a='a, symmetric])

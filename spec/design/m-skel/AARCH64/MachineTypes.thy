@@ -7,6 +7,7 @@ chapter "AARCH64 Machine Types"
 
 theory MachineTypes
 imports
+  Word_Lib_l4v.WordSetup
   Word_Lib.WordSetup
   Monads.Nondet_Empty_Fail
   Monads.Nondet_No_Fail

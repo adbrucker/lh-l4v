@@ -9,7 +9,7 @@ chapter "Platform Definitions"
 theory Platform
 imports
   "Lib.Lib"
-  "Word_Lib.WordSetup"
+  "Word_Lib_l4v.WordSetup"
   "Lib.Defs"
   Setup_Locale
   Kernel_Config

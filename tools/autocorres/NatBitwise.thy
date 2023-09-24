@@ -8,7 +8,7 @@
    Lemmas about this instance should also go here. *)
 theory NatBitwise
 imports
-  Word_Lib.WordSetup
+  Word_Lib_l4v.WordSetup
 begin
 
 instantiation nat :: lsb

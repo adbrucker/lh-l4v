@@ -6,7 +6,7 @@
 
 chapter Lib
 
-session Basics (lib) = Word_Lib +
+session Basics (lib) = Word_Lib_l4v +
 
   theories
     CLib

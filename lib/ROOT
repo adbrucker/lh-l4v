@@ -6,7 +6,7 @@
 
 chapter Lib
 
-session Lib (lib) = Word_Lib +
+session Lib (lib) = Word_Lib_l4v +
   sessions
     "HOL-Library"
     Basics

@@ -7,7 +7,7 @@
 theory AbstractArrays
 imports
   "CParser.TypHeapLib"
-  "Word_Lib.WordSetup"
+  "Word_Lib_l4v.WordSetup"
 begin
 
 (*

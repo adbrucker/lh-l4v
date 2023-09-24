@@ -198,35 +198,35 @@ text \<open>
 
     \<^descr>[Syntax]
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Syntax_Bundles\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Syntax_Bundles\<close>]
         Bundles to provide alternative syntax for various bit operations.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Hex_Words\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Hex_Words\<close>]
         Printing word numerals as hexadecimal numerals.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Type_Syntax\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Type_Syntax\<close>]
         Pretty type-sensitive syntax for cast operations.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Word_Syntax\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Word_Syntax\<close>]
         Specific ASCII syntax for prominent bit operations on word.
 
     \<^descr>[Proof tools]
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Norm_Words\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Norm_Words\<close>]
         Rewriting word numerals to normal forms.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Bitwise\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Bitwise\<close>]
         Method @{method word_bitwise} decomposes word equalities and inequalities into bit propositions.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Bitwise_Signed\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Bitwise_Signed\<close>]
         Method @{method word_bitwise_signed} decomposes word equalities and inequalities into bit propositions.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Word_EqI\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Word_EqI\<close>]
         Method @{method word_eqI_solve} decomposes word equalities and inequalities into bit propositions.
 
     \<^descr>[Operations]
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Signed_Division_Word\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Signed_Division_Word\<close>]
 
         Signed division on word:
 
@@ -234,16 +234,16 @@ text \<open>
 
           \<^item> @{term [source] \<open>(smod) :: 'a::len word \<Rightarrow> 'a word \<Rightarrow> 'a word\<close>}
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Aligned\<close>] \
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Aligned\<close>] \
 
           \<^item> @{thm [mode=iff] is_aligned_iff_udvd [no_vars]}
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Least_significant_bit\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Least_significant_bit\<close>]
 
         The least significant bit as an alias:
         @{thm [mode=iff] lsb_odd [where ?'a = int, no_vars]}
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Most_significant_bit\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Most_significant_bit\<close>]
 
         The most significant bit:
 
@@ -255,7 +255,7 @@ text \<open>
 
           \<^item> @{thm [mode=iff] msb_word_iff_bit [no_vars]}
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Bit_Shifts_Infix_Syntax\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Bit_Shifts_Infix_Syntax\<close>]
 
         Bit shifts decorated with infix syntax:
 
@@ -265,57 +265,57 @@ text \<open>
 
           \<^item> @{thm Bit_Shifts_Infix_Syntax.sshiftr_def [no_vars]}
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Next_and_Prev\<close>] \
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Next_and_Prev\<close>] \
 
           \<^item> @{thm word_next_unfold [no_vars]}
 
           \<^item> @{thm word_prev_unfold [no_vars]}
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Enumeration_Word\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Enumeration_Word\<close>]
 
         More on explicit enumeration of word types.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.More_Word_Operations\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.More_Word_Operations\<close>]
 
         Even more operations on word.
 
     \<^descr>[Types]
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Signed_Words\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Signed_Words\<close>]
 
           Formal tagging of word types with a \<^text>\<open>signed\<close> marker.
 
     \<^descr>[Lemmas]
 
-      \<^descr>[\<^theory>\<open>Word_Lib.More_Word\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.More_Word\<close>]
 
           More lemmas on words.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Word_Lemmas\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Word_Lemmas\<close>]
 
           More lemmas on words, covering many other theories mentioned here.
 
     \<^descr>[Words of popular lengths].
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Word_8\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Word_8\<close>]
 
           for 8-bit words.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Word_16\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Word_16\<close>]
 
           for 16-bit words.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Word_32\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Word_32\<close>]
 
           for 32-bit words.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Word_64\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Word_64\<close>]
 
           for 64-bit words. This theory is not part of  \<^text>\<open>Word_Lib_Sumo\<close>, because it shadows
-          names from \<^theory>\<open>Word_Lib.Word_32\<close>. They can be used together, but then will have
+          names from \<^theory>\<open>Word_Lib_l4v.Word_32\<close>. They can be used together, but then will have
           to use qualified names in applications.
 
-      \<^descr>[\<^theory>\<open>Word_Lib.Machine_Word_32\<close> and \<^theory>\<open>Word_Lib.Machine_Word_64\<close>]
+      \<^descr>[\<^theory>\<open>Word_Lib_l4v.Machine_Word_32\<close> and \<^theory>\<open>Word_Lib_l4v.Machine_Word_64\<close>]
 
           provide lemmas for 32-bit words and 64-bit words under the same name,
           which can help to organize applications relying on some form
@@ -343,36 +343,36 @@ text \<open>
   from those theories.  However theorem coverage may still
   be terse in some cases.
 
-  \<^descr>[\<^theory>\<open>Word_Lib.Word_Lib_Sumo\<close>]
+  \<^descr>[\<^theory>\<open>Word_Lib_l4v.Word_Lib_Sumo\<close>]
 
     An entry point importing any relevant theory in that session.  Intended
     for backward compatibility: start importing this theory when
     migrating applications to Isabelle2021, and later sort out
     what you really need. You may need to include
-   \<^theory>\<open>Word_Lib.Word_64\<close> separately.
+   \<^theory>\<open>Word_Lib_l4v.Word_64\<close> separately.
 
-  \<^descr>[\<^theory>\<open>Word_Lib.Generic_set_bit\<close>]
+  \<^descr>[\<^theory>\<open>Word_Lib_l4v.Generic_set_bit\<close>]
 
     Kind of an alias: @{thm set_bit_eq [no_vars]}
 
-  \<^descr>[\<^theory>\<open>Word_Lib.Typedef_Morphisms\<close>]
+  \<^descr>[\<^theory>\<open>Word_Lib_l4v.Typedef_Morphisms\<close>]
 
     A low-level extension to HOL typedef providing
     conversions along type morphisms.  The @{method transfer} method
     seems to be sufficient for most applications though.
 
-  \<^descr>[\<^theory>\<open>Word_Lib.Bit_Comprehension\<close>]
+  \<^descr>[\<^theory>\<open>Word_Lib_l4v.Bit_Comprehension\<close>]
 
     Comprehension syntax for bit values over predicates
     \<^typ>\<open>nat \<Rightarrow> bool\<close>, for \<^typ>\<open>'a::len word\<close>; straightforward
     alternatives exist.
 
-  \<^descr>[\<^theory>\<open>Word_Lib.Bit_Comprehension_Int\<close>]
+  \<^descr>[\<^theory>\<open>Word_Lib_l4v.Bit_Comprehension_Int\<close>]
 
     Comprehension syntax for bit values over predicates
     \<^typ>\<open>nat \<Rightarrow> bool\<close>, for \<^typ>\<open>int\<close>; inherently non-computational.
 
-  \<^descr>[\<^theory>\<open>Word_Lib.Reversed_Bit_Lists\<close>]
+  \<^descr>[\<^theory>\<open>Word_Lib_l4v.Reversed_Bit_Lists\<close>]
 
     Representation of bit values as explicit list in
     \<^emph>\<open>reversed\<close> order.
@@ -383,11 +383,11 @@ text \<open>
 
     @{thm [display] horner_sum_bit_eq_take_bit [where ?'a = int, no_vars]}
 
-  \<^descr>[\<^theory>\<open>Word_Lib.Many_More\<close>]
+  \<^descr>[\<^theory>\<open>Word_Lib_l4v.Many_More\<close>]
 
     Collection of operations and theorems which are kept for backward
-    compatibility and not used in other theories in session \<^text>\<open>Word_Lib\<close>.
-    They are used in applications of \<^text>\<open>Word_Lib\<close>, but should be migrated to there.
+    compatibility and not used in other theories in session \<^text>\<open>Word_Lib_l4v\<close>.
+    They are used in applications of \<^text>\<open>Word_Lib_l4v\<close>, but should be migrated to there.
 \<close>
 
 section \<open>Changelog\<close>
@@ -395,31 +395,31 @@ section \<open>Changelog\<close>
 text \<open>
   \<^descr>[Changes since AFP 2022] ~
 
-    \<^item> Theory \<^text>\<open>Word_Lib.Ancient_Numeral\<close> has been removed from session.
+    \<^item> Theory \<^text>\<open>Word_Lib_l4v.Ancient_Numeral\<close> has been removed from session.
 
     \<^item> Bit comprehension syntax for \<^typ>\<open>int\<close> moved to separate theory
-      \<^theory>\<open>Word_Lib.Bit_Comprehension_Int\<close>.
+      \<^theory>\<open>Word_Lib_l4v.Bit_Comprehension_Int\<close>.
 
   \<^descr>[Changes since AFP 2021] ~
 
-    \<^item> Theory \<^text>\<open>Word_Lib.Ancient_Numeral\<close> is not part of \<^theory>\<open>Word_Lib.Word_Lib_Sumo\<close>
+    \<^item> Theory \<^text>\<open>Word_Lib_l4v.Ancient_Numeral\<close> is not part of \<^theory>\<open>Word_Lib_l4v.Word_Lib_Sumo\<close>
       any longer.
 
     \<^item> Infix syntax for \<^term>\<open>(AND)\<close>, \<^term>\<open>(OR)\<close>, \<^term>\<open>(XOR)\<close> organized in
       syntax bundle \<^bundle>\<open>bit_operations_syntax\<close>.
 
     \<^item> Abbreviation \<^abbrev>\<open>max_word\<close> moved from distribution into theory
-      \<^theory>\<open>Word_Lib.Legacy_Aliases\<close>.
+      \<^theory>\<open>Word_Lib_l4v.Legacy_Aliases\<close>.
 
     \<^item> Operation \<^const>\<open>test_bit\<close> replaced by input abbreviation \<^abbrev>\<open>test_bit\<close>.
 
     \<^item> Abbreviations \<^abbrev>\<open>bin_nth\<close>, \<^abbrev>\<open>bin_last\<close>, \<^abbrev>\<open>bin_rest\<close>,
       \<^abbrev>\<open>bintrunc\<close>, \<^abbrev>\<open>sbintrunc\<close>, \<^abbrev>\<open>norm_sint\<close>,
-      \<^abbrev>\<open>bin_cat\<close> moved into theory \<^theory>\<open>Word_Lib.Legacy_Aliases\<close>.
+      \<^abbrev>\<open>bin_cat\<close> moved into theory \<^theory>\<open>Word_Lib_l4v.Legacy_Aliases\<close>.
 
     \<^item> Operations \<^abbrev>\<open>bshiftr1\<close>,
       \<^abbrev>\<open>setBit\<close>, \<^abbrev>\<open>clearBit\<close> moved from distribution into theory
-      \<^theory>\<open>Word_Lib.Legacy_Aliases\<close> and replaced by input abbreviations.
+      \<^theory>\<open>Word_Lib_l4v.Legacy_Aliases\<close> and replaced by input abbreviations.
 
     \<^item> Operations \<^const>\<open>shiftl1\<close>, \<^const>\<open>shiftr1\<close>, \<^const>\<open>sshiftr1\<close>
       moved here from distribution.

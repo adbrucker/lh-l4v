@@ -526,7 +526,7 @@ lemma pt_offs_range_correct:
   "x \<in> pt_offs_range High_pt_ptr \<Longrightarrow> \<exists>y. x = High_pt_ptr + (ucast (y:: 8 word) << 2)"
   by (simp_all add: pt_offs_range_correct' s0_ptrs_aligned)
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma bl_to_bin_le2p_aux:
   "bl_to_bin_aux bs w \<le> (w + 1) * (2 ^ length bs) - 1"
   apply (induct bs arbitrary: w)
@@ -536,7 +536,7 @@ lemma bl_to_bin_le2p_aux:
   apply (drule meta_spec, erule xtr8 [rotated], simp)+
   done
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma bl_to_bin_le2p: "bl_to_bin bs \<le> (2 ^ length bs) - 1"
   apply (unfold bl_to_bin_def)
   apply (rule xtr3)
@@ -545,7 +545,7 @@ lemma bl_to_bin_le2p: "bl_to_bin bs \<le> (2 ^ length bs) - 1"
   apply simp
   done
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma of_bl_length_le:
   "length x = k \<Longrightarrow> k < len_of TYPE('a) \<Longrightarrow> (of_bl x :: 'a :: len word) \<le> 2 ^ k - 1"
   by (simp add: of_bl_length_less)
@@ -606,11 +606,11 @@ lemma cnode_offs_in_range:
   "length x = 10 \<Longrightarrow> Silc_cnode_ptr + of_bl x * 0x10 \<in> cnode_offs_range Silc_cnode_ptr"
   by (simp_all add: cnode_offs_in_range' s0_ptrs_aligned)
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma le_mask_eq: "x \<le> 2 ^ n - 1 \<Longrightarrow> x AND mask n = (x :: 'a :: len word)"
   by (metis and_mask_eq_iff_le_mask mask_2pm1)
 
-(* FIXME: move to Word_Lib *)
+(* FIXME: move to Word_Lib_l4v *)
 lemma word_div_mult':
   fixes c :: "'a::len word"
   shows "\<lbrakk>0 < c; a \<le> b * c \<rbrakk> \<Longrightarrow> a div c \<le> b"

@@ -27,7 +27,7 @@ chapter "Specifications"
  *)
 
 (* Session on which most other sessions build. *)
-session ASpec in "abstract" = Word_Lib +
+session ASpec in "abstract" = Word_Lib_l4v +
   options [document=pdf]
   sessions
     "HOL-Library"
@@ -61,7 +61,7 @@ session ASpec in "abstract" = Word_Lib +
  * Executable/Design Specification
  *)
 
-session ExecSpec in "design" = Word_Lib +
+session ExecSpec in "design" = Word_Lib_l4v +
   options [document = false]
   sessions
     Lib
@@ -106,7 +106,7 @@ session CKernel in "cspec/$L4V_ARCH" = CParser +
  * CapDL
  *)
 
-session DSpec in capDL = Word_Lib +
+session DSpec in capDL = Word_Lib_l4v +
   sessions
     ExecSpec
     ASpec
@@ -119,7 +119,7 @@ session DSpec in capDL = Word_Lib +
  * Take-Grant.
  *)
 
-session TakeGrant in "take-grant" = Word_Lib +
+session TakeGrant in "take-grant" = Word_Lib_l4v +
   theories
     "System_S"
     "Isolation_S"

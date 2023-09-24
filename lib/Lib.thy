@@ -22,7 +22,7 @@ imports
   Monads.Monad_Lib
   Basics.CLib
   NICTATools
-  "Word_Lib.WordSetup"
+  "Word_Lib_l4v.WordSetup"
 begin
 
 (* FIXME: eliminate *)

@@ -5,7 +5,7 @@
  *)
 
 theory More_Numeral_Type
-  imports "Word_Lib.WordSetup"
+  imports "Word_Lib_l4v.WordSetup"
 begin
 
 (* This theory provides additional setup for numeral types, which should probably go into

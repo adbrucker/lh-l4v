@@ -1456,7 +1456,7 @@ lemma mask_inj_if:
   "\<lbrakk>a && mask n = a; b && mask n = b; a && mask n = b && mask n\<rbrakk>\<Longrightarrow> a = b"
   by (rule box_equals)
 
-(* FIXME: move to Word_Lib, generalise *)
+(* FIXME: move to Word_Lib_l4v, generalise *)
 lemma bound_preserve_mask:
   "\<lbrakk> is_aligned (x::word32) n; x\<le> mask k; (z::word32)\<le> mask n; n < 32; k < 32; n \<le> k \<rbrakk> \<Longrightarrow>
    x+z \<le> mask k"

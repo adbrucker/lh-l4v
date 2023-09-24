@@ -6,7 +6,7 @@
  *)
 
 theory CLib
-  imports Word_Lib.Many_More
+  imports Word_Lib_l4v.Many_More
 begin
 
 lemma nat_diff_less:

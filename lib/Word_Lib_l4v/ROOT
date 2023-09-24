@@ -6,8 +6,8 @@
 
 chapter Lib
 
-session Word_Lib (lib) = HOL +
-  options [timeout = 300, document=pdf]
+session Word_Lib_l4v (lib) = HOL +
+  options [timeout = 900, document=pdf]
   sessions
     "HOL-Library"
     "HOL-Eisbach"

@@ -250,7 +250,7 @@ lemma is_aligned_ptrFromPAddr_pageBitsForSize:
   "is_aligned p (pageBitsForSize sz) \<Longrightarrow> is_aligned (ptrFromPAddr p) (pageBitsForSize sz)"
   by (cases sz ; simp add: is_aligned_ptrFromPAddr_n pageBits_def)
 
-(* FIXME: generalise, move to Word_Lib, and/or rewrite using
+(* FIXME: generalise, move to Word_Lib_l4v, and/or rewrite using
    'leq_high_bits_shiftr_low_bits_leq_bits' *)
 lemma le_mask_asid_bits_helper:
   "x \<le> 2 ^ asid_high_bits - 1 \<Longrightarrow> (x::word32) << asid_low_bits \<le> mask asid_bits"
@@ -271,7 +271,7 @@ lemma is_aligned_pageBitsForSize_minimum:
   apply (erule is_aligned_weaken, simp)+
   done
 
-(* FIXME: generalise, move to Word_Lib, and/or rewrite using 'shift_then_mask_eq_shift_low_bits' *)
+(* FIXME: generalise, move to Word_Lib_l4v, and/or rewrite using 'shift_then_mask_eq_shift_low_bits' *)
 lemma shiftr_asid_low_bits_mask_asid_high_bits:
   "(asid :: word32) \<le> mask asid_bits
       \<Longrightarrow> (asid >> asid_low_bits) && mask asid_high_bits = asid >> asid_low_bits"
@@ -288,7 +288,7 @@ lemma ucast_asid_high_bits_is_shift:
   unfolding asid_bits_def asid_low_bits_def asid_high_bits_of_def
   by (rule ucast_ucast_eq_mask_shift, simp)
 
-(* FIXME: generalise, move to Word_Lib, and/or rewrite using 'leq_low_bits_iff_zero' *)
+(* FIXME: generalise, move to Word_Lib_l4v, and/or rewrite using 'leq_low_bits_iff_zero' *)
 lemma shiftr_asid_low_bits_mask_eq_0:
   "\<lbrakk> (asid :: word32) \<le> mask asid_bits; asid >> asid_low_bits = 0 \<rbrakk>
         \<Longrightarrow> (asid && mask asid_low_bits = 0) = (asid = 0)"

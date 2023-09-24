@@ -6,7 +6,7 @@
 
 chapter "C-Parser"
 
-session "Simpl-VCG" in Simpl = Word_Lib +
+session "Simpl-VCG" in Simpl = Word_Lib_l4v +
   sessions
     "HOL-Statespace"
   theories

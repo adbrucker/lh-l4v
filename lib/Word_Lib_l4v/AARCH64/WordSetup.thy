@@ -5,7 +5,7 @@
  *)
 
 
-theory WordSetup (* part of non-AFP Word_Lib *)
+theory WordSetup (* part of non-AFP Word_Lib_l4v *)
 imports
   Word_Lemmas_64_Internal
   Distinct_Prop

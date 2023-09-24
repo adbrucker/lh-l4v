@@ -18,7 +18,7 @@ imports
   Oblivious
   Injection_Handler
   Monads.Nondet_While_Loop_Rules_Completeness
-  "Word_Lib.Distinct_Prop" (* for distinct_tuple_helper *)
+  "Word_Lib_l4v.Distinct_Prop" (* for distinct_tuple_helper *)
   Monads.Reader_Option_VCG
 begin
 

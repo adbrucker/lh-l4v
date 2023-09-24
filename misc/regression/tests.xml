@@ -53,7 +53,7 @@
 
   <!-- Build Isabelle and common theories (Pure, HOL, Word). -->
   <sequence>
-    <test name="isabelle" cwd="../.." cpu-timeout="3600">isabelle/bin/isabelle build -d . -vb Word_Lib</test>
+    <test name="isabelle" cwd="../.." cpu-timeout="3600">isabelle/bin/isabelle build -d . -vb Word_Lib_l4v</test>
   </sequence>
 
     <!-- Ensure that all of our XML files are strictly correct. -->

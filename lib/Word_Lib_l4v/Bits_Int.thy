@@ -8,10 +8,10 @@ section \<open>Bitwise Operations on integers\<close>
 
 theory Bits_Int
   imports
-    "Word_Lib.Most_significant_bit"
-    "Word_Lib.Least_significant_bit"
-    "Word_Lib.Generic_set_bit"
-    "Word_Lib.Bit_Comprehension"
+    "Word_Lib_l4v.Most_significant_bit"
+    "Word_Lib_l4v.Least_significant_bit"
+    "Word_Lib_l4v.Generic_set_bit"
+    "Word_Lib_l4v.Bit_Comprehension"
 begin
 
 subsection \<open>Implicit bit representation of \<^typ>\<open>int\<close>\<close>

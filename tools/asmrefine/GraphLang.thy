@@ -512,7 +512,7 @@ fun parse_n p (n :: ss) = let
   in funpow_yield n p ss end
   | parse_n _ [] = raise PARSEGRAPH ["parse_n: empty"]
 
-fun mk_binT sz = Word_Lib.mk_wordT sz |> dest_Type |> snd |> hd
+fun mk_binT sz = Word_Lib_l4v.mk_wordT sz |> dest_Type |> snd |> hd
 
 val ptr_size_str =
     case @{typ machine_word} of
@@ -521,7 +521,7 @@ val ptr_size_str =
 
 fun parse_typ ("Word" :: n :: ss) = let
     val n = parse_int n
-  in (Word_Lib.mk_wordT n, ss) end
+  in (Word_Lib_l4v.mk_wordT n, ss) end
   | parse_typ ("Bool" :: ss) = (@{typ bool}, ss)
   | parse_typ ("Mem" :: ss) = (@{typ "machine_word \<Rightarrow> word8"}, ss)
   | parse_typ ("Dom" :: ss) = (@{typ "machine_word set"}, ss)

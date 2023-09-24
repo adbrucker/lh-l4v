@@ -6,7 +6,7 @@
 
 theory TailrecPre
 imports
-  "Word_Lib.WordSetup"
+  "Word_Lib_l4v.WordSetup"
   "Lib.Lib"
 begin
 
