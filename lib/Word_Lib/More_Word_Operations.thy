@@ -306,7 +306,7 @@ proof -
     by (rule not_aligned_mod_nz) fact+
 
   then have um: "unat (a mod 2 ^ n - 1) div 2 ^ n = 0" using sz
-    by (meson Euclidean_Division.div_eq_0_iff le_m1_iff_lt measure_unat order_less_trans
+    by (meson div_eq_0_iff le_m1_iff_lt measure_unat order_less_trans
               unat_less_power word_less_sub_le word_mod_less_divisor)
 
   have "a + 2 ^ n - 1 = (a div 2 ^ n) * 2 ^ n + (a mod 2 ^ n) + 2 ^ n - 1"
