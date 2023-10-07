@@ -541,7 +541,7 @@ lemma lift_t_hrs_mem_update_fld:
                    Some (adjust_ti (typ_info_t TYPE('b)) xf (xfu \<circ> (\<lambda>x _. x)), m')"
   and   xf_xfu: "fg_cons xf (xfu \<circ> (\<lambda>x _. x))"
   and       cl: "lift_t g hp ptr = Some z"
-  shows "(lift_t g (hrs_mem_update (heap_update (Ptr &(ptr\<rightarrow>f)) val) hp)) =
+  shows "((lift_t g) (hrs_mem_update (heap_update (Ptr &(ptr\<rightarrow>f)) val) hp)) =
          (lift_t g hp)(ptr \<mapsto> xfu (\<lambda>_. val) z)"
   (is "?LHS = ?RHS")
 proof -
@@ -567,7 +567,7 @@ proof -
 
   also
   have "\<dots> = (lift_t g hp)(ptr \<mapsto> update_ti_t (adjust_ti (typ_info_t TYPE('b)) xf (xfu \<circ> (\<lambda>x _. x)))
-                                            (to_bytes_p val) z)"
+                                              (to_bytes_p val) z)"
     by (simp add: cl eui fl super_field_update_lookup)
 
   also have "\<dots> = ?RHS" using xf_xfu

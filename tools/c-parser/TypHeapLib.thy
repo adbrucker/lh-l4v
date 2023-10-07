@@ -172,7 +172,7 @@ lemma clift_field_update:
   and       eu: "export_uinfo t = export_uinfo (typ_info_t TYPE('b))"
   and       cl: "clift hp ptr = Some z"
   shows "(clift (hrs_mem_update (heap_update (Ptr &(ptr\<rightarrow>f)) val) hp)) =
-  (clift hp)(ptr \<mapsto> field_update (field_desc t) (to_bytes_p val) z)"
+         (clift hp)(ptr \<mapsto> field_update (field_desc t) (to_bytes_p val) z)"
   (is "?LHS = ?RHS")
 proof -
   have cl': "clift (fst hp, snd hp) ptr = Some z" using cl by simp

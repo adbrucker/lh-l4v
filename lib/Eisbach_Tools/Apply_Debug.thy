@@ -491,7 +491,7 @@ fun maybe_bind st (_,[tok]) ctxt =
   else
     let
       val SOME (Token.Declaration decl) = Token.get_value tok;
-      val dummy_ctxt = (Morphism.form decl) (Context.Proof ctxt);
+      val dummy_ctxt = Morphism.form decl (Context.Proof ctxt);
       val SOME (phi,static_ctxt,{private_dyn_facts, local_facts}) = Data.get dummy_ctxt;
 
       val old_facts = Proof_Context.facts_of static_ctxt;
